@@ -1,12 +1,12 @@
 #this file consists of code for instances and sg
 provider "aws" {
 region = "ap-south-1"
-access_key = "AKIAR5U4NRGJZ7MRLAAU"
-secret_key = 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""
+access_key = "AKIAR5U4NRGJUOHLZ47C"
+secret_key = "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"
 }
 
 resource "aws_instance" "one" {
-  ami             = "ami-02f3f602d23f1659d"
+  ami             = "ami-05afd67c4a44cc983"
   instance_type   = "t2.micro"
   key_name        = "minicube1"
   vpc_security_group_ids = [aws_security_group.three.id]
@@ -25,7 +25,7 @@ EOF
 }
 
 resource "aws_instance" "two" {
-  ami             = "ami-02f3f602d23f1659d"
+  ami             = "ami-05afd67c4a44cc983"
   instance_type   = "t2.micro"
   key_name        = "eks"
   vpc_security_group_ids = [aws_security_group.three.id]
