@@ -6,6 +6,7 @@ secret_key = "fH41lWPg04I6U84vS2eqEcuRf8F4hiwfUVpq+cwf"
 }
 hello
 hi
+hiii
 resource "aws_instance" "one" {
   ami             = "ami-0d81306eddc614a45"
   instance_type   = "t2.micro"
